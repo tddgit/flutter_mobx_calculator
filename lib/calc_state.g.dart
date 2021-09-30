@@ -65,6 +65,17 @@ mixin _$CalcState on _CalcStateBase, Store {
   }
 
   @override
+  void addUserInput(String inputChar) {
+    final _$actionInfo = _$_CalcStateBaseActionController.startAction(
+        name: '_CalcStateBase.addUserInput');
+    try {
+      return super.addUserInput(inputChar);
+    } finally {
+      _$_CalcStateBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
 userInput: ${userInput},

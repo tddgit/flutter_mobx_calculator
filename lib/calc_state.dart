@@ -1,3 +1,4 @@
+import 'package:math_expressions/math_expressions.dart';
 import 'package:mobx/mobx.dart';
 
 part 'calc_state.g.dart';
@@ -5,11 +6,13 @@ part 'calc_state.g.dart';
 class CalcState = _CalcStateBase with _$CalcState;
 
 abstract class _CalcStateBase with Store {
+  Parser parser = Parser();
+  ContextModel cm = ContextModel();
   @observable
-  late String userInput;
+  String userInput = '';
 
   @observable
-  late String result;
+  String result = '';
 
   @action
   void clean() {
@@ -18,10 +21,25 @@ abstract class _CalcStateBase with Store {
 
   @action
   void delete() {
-    userInput.substring(0, userInput.length - 1);
+    userInput = userInput.substring(0, userInput.length - 1);
   }
 
+  @action
+  // ignore: no-empty-block
   void addUserInput(String inputChar) {
-    userInput += userInput;
+    // TODO1: Add validation of input special characters
+    // const unrepeatedInput = <String>['^', '%', '✖️', '+', '-', '➗', ','];
+    // final previousInput = userInput.isNotEmpty && userInput.endsWith(other)
+    //     ? userInput.substring(userInput.length - 1, userInput.length )
+    //     : '';
+    // if (!(unrepeatedInput.contains(previousInput) &&
+    //     unrepeatedInput.contains(inputChar))) {
+    userInput += inputChar;
+  }
+
+  @action
+  void calculate() {
+    final Expression exp = parser.parse(userInput);
+    result = exp.evaluate(EvaluationType.REAL, cm).toString();
   }
 }

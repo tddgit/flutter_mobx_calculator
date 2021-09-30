@@ -1,16 +1,8 @@
 # flutter_mobx_calculator
 
-A new Flutter project.
 
-## Getting Started
+Calculator with MobX state management
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![picture 1](images/8ca506120e0c5fdf4b3c41b9631bd248a7439a1d337b743bcd9bdafe4e97dd54.png)  
+![picture 2](images/fd2f923a5da011c1bd52d880d5ddec5c66d2a4572bf0983ae865af86192f55c7.png)  

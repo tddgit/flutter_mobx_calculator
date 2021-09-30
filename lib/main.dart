@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:state_management_example/button.dart';
-import 'package:state_management_example/calc_state.dart';
-import 'package:state_management_example/grid_generator.dart';
+import 'package:flutter_mobx_calculator/calc_state.dart';
+import 'package:flutter_mobx_calculator/grid_generator.dart';
 
 final calculator = CalcState();
 void main() {
@@ -37,6 +36,7 @@ class MyHomePage extends StatelessWidget {
                 return Container(
                   color: Colors.white,
                   child: Container(
+                    color: Colors.grey,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
                           child: Text(
                             calculator.userInput,
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 35,
                             ),
                           ),
                         ),
@@ -56,7 +56,7 @@ class MyHomePage extends StatelessWidget {
                           child: Text(
                             calculator.result,
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 70,
                             ),
                           ),
                         ),
