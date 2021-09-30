@@ -15,7 +15,7 @@ description: Shopping Cart with MobX state management.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"  
 
 dependencies:
   cupertino_icons: null
@@ -24,6 +24,7 @@ dependencies:
   flutter_mobx: null
   mobx: null
   provider: null
+ 
   
 
 dev_dependencies:
@@ -37,16 +38,16 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
 flutter:
-  assets:
-    # - assets/pictures/Blueberries.jpg
-    # - assets/pictures/Candy_Crush.jpg
-    # - assets/pictures/Dart.jpg
-    # - assets/pictures/Mario.jpg
-    # - assets/pictures/Watermelon.jpg
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
-  uses-material-design: true
+  # assets:
+  #   # - assets/pictures/Blueberries.jpg
+  #   # - assets/pictures/Candy_Crush.jpg
+  #   # - assets/pictures/Dart.jpg
+  #   # - assets/pictures/Mario.jpg
+  #   # - assets/pictures/Watermelon.jpg
+  # # The following line ensures that the Material Icons font is
+  # # included with your application, so that you can use the icons in
+  # # the material Icons class.
+  # uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

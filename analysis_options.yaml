@@ -30,6 +30,7 @@ analyzer:
     avoid_print: ignore
     always_put_control_body_on_new_line: ignore
     avoid_types_on_closure_parameters: ignore
+    use_key_in_widget_constructors: ignore
 
 
 
